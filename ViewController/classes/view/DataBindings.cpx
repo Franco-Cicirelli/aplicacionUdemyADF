@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.22.48" id="DataBindings"
+             SeparateXMLFiles="false" Package="view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/oldPages/departments.jsf" usageId="view_departmentsPageDef"/>
+    <page path="/oldPages/main.jsf" usageId="view_mainPageDef"/>
+    <page path="/oldPages/dept.jsff" usageId="view_deptPageDef"/>
+    <page path="/oldPages/employee.jsff" usageId="view_employeePageDef"/>
+    <page path="/oldPages/trainPage.jsf" usageId="view_trainPagePageDef"/>
+    <page path="/oldPages/departmentTrain.jsff" usageId="view_departmentTrainPageDef"/>
+    <page path="/oldPages/employeeTrain.jsff" usageId="view_employeeTrainPageDef"/>
+    <page path="/WEB-INF/task-flow-definition-transaction.xml#task-flow-definition-transaction@CreateInsert"
+          usageId="view_task_flow_definition_transaction_task_flow_definition_transaction_CreateInsertPageDef"/>
+    <page path="/oldPages/newDept.jsff" usageId="view_newDeptPageDef"/>
+    <page path="/oldPages/newEmps.jsff" usageId="view_newEmpsPageDef"/>
+    <page path="/oldPages/newDeptsSummary.jsff" usageId="view_newDeptsSummaryPageDef"/>
+    <page path="/oldPages/transaction.jsf" usageId="view_transactionPageDef"/>
+    <page path="/deptUseTemplate.jsf" usageId="view_deptUseTemplatePageDef"/>
+    <page path="/employeesUseTemplate.jsf" usageId="view_employeesUseTemplatePageDef"/>
+    <page path="/uiComponents.jsf" usageId="view_uiComponentsPageDef"/>
+    <page path="/datacontrol.jsf" usageId="view_datacontrolPageDef"/>
+    <page path="/programmatic.jsf" usageId="view_programmaticPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="view_departmentsPageDef" path="view.pageDefs.departmentsPageDef"/>
+    <page id="view_mainPageDef" path="view.pageDefs.mainPageDef"/>
+    <page id="view_deptPageDef" path="view.pageDefs.deptPageDef"/>
+    <page id="view_employeePageDef" path="view.pageDefs.employeePageDef"/>
+    <page id="view_trainPagePageDef" path="view.pageDefs.trainPagePageDef"/>
+    <page id="view_departmentTrainPageDef" path="view.pageDefs.departmentTrainPageDef"/>
+    <page id="view_employeeTrainPageDef" path="view.pageDefs.employeeTrainPageDef"/>
+    <page id="view_task_flow_definition_transaction_task_flow_definition_transaction_CreateInsertPageDef"
+          path="view.pageDefs.task_flow_definition_transaction_task_flow_definition_transaction_CreateInsertPageDef"/>
+    <page id="view_newDeptPageDef" path="view.pageDefs.newDeptPageDef"/>
+    <page id="view_newEmpsPageDef" path="view.pageDefs.newEmpsPageDef"/>
+    <page id="view_newDeptsSummaryPageDef" path="view.pageDefs.newDeptsSummaryPageDef"/>
+    <page id="view_transactionPageDef" path="view.pageDefs.transactionPageDef"/>
+    <page id="view_deptUseTemplatePageDef" path="view.pageDefs.deptUseTemplatePageDef"/>
+    <page id="view_employeesUseTemplatePageDef" path="view.pageDefs.employeesUseTemplatePageDef"/>
+    <page id="view_uiComponentsPageDef" path="view.pageDefs.uiComponentsPageDef"/>
+    <page id="view_datacontrolPageDef" path="view.pageDefs.datacontrolPageDef"/>
+    <page id="view_programmaticPageDef" path="view.pageDefs.programmaticPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="AppModuleDataControl" Package="model.eo"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true"
+                     SupportsFindMode="true" SupportsRangesize="true" SupportsResetState="true"
+                     SupportsSortCollection="true" Configuration="AppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
